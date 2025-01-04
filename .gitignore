@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Allow .gitignore files
+!.gitignore
+
+# Allow all src directories and Java files
+!*/src/
+!*/src/**/*.java
+
