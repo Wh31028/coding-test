@@ -12,20 +12,20 @@ public class FlipString {
         String[] inputNum = input.split("");
 
         String pre = inputNum[0];
-        if(pre.equals("0")){
+        if (pre.equals("0")) {
             count0++;
-        }else{
+        } else {
             count1++;
         }
-        for(int i=1;i<inputNum.length;i++){
-            if(!inputNum[i].equals(pre)&&inputNum[i].equals("0")){
+        for (int i = 1; i < inputNum.length; i++) {
+            if (!inputNum[i].equals(pre) && inputNum[i].equals("0")) {
                 count0++;
-            }else if(!inputNum[i].equals(pre)&&inputNum[i].equals("1")){
+            } else if (!inputNum[i].equals(pre) && inputNum[i].equals("1")) {
                 count1++;
             }
             pre = inputNum[i];
         }
-        System.out.println(min(count0,count1));
+        System.out.println(min(count0, count1));
 
     }
 }

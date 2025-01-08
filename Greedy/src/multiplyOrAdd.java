@@ -9,15 +9,15 @@ public class multiplyOrAdd {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         String[] inputToArr = input.split("");
-        for(int i=0;i<inputToArr.length;i++){
+        for (int i = 0; i < inputToArr.length; i++) {
             list.add(Integer.parseInt(inputToArr[i]));
         }
 
-        int sum  = list.get(0);
-        for(int i=1;i<list.size();i++){
-            if(sum<=0||list.get(i)<=1){
+        int sum = list.get(0);
+        for (int i = 1; i < list.size(); i++) {
+            if (sum <= 0 || list.get(i) <= 1) {
                 sum += list.get(i);
-            }else{
+            } else {
                 sum *= list.get(i);
             }
         }

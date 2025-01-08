@@ -6,7 +6,7 @@ public class adventurerGuild {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] fear = new int[n];
-        for(int i = 0; i < fear.length; i++) {
+        for (int i = 0; i < fear.length; i++) {
             fear[i] = scanner.nextInt();
         }
 
@@ -16,16 +16,16 @@ public class adventurerGuild {
         int count = 0;
         int pre = 0;
         int now = 0;
-        for(int i = 0; i < fear.length; i++) {
-            if(fear[i] == 1){
+        for (int i = 0; i < fear.length; i++) {
+            if (fear[i] == 1) {
                 totalCount++;
-            }else{
+            } else {
                 pre = now;
                 now = fear[i];
                 count++;
-                if(pre==now && count == now){
+                if (pre == now && count == now) {
                     totalCount++;
-                    count  =0;
+                    count = 0;
                 }
             }
         }
