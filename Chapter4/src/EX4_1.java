@@ -11,18 +11,18 @@ public class EX4_1 {
         int x = 1;
         int y = 1;
 
-        for(int i=0;i<6;i++){
-            if(order[i]=='R'&&x<N){
+        for (int i = 0; i < 6; i++) {
+            if (order[i] == 'R' && x < N) {
                 x++;
-            }else if(order[i]=='L'&&x>0){
+            } else if (order[i] == 'L' && x > 0) {
                 x--;
-            }else if (order[i]=='U'&&y>1){
+            } else if (order[i] == 'U' && y > 1) {
                 y--;
-            }else if(order[i]=='D'&&y<N){
+            } else if (order[i] == 'D' && y < N) {
                 y++;
             }
         }
-        System.out.println(y+" "+x);
+        System.out.println(y + " " + x);
 
     }
 }
