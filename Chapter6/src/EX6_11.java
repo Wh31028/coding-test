@@ -10,17 +10,18 @@ public class EX6_11 {
         int N = sc.nextInt();
         sc.nextLine();
         List<Student> students = new ArrayList<>();
-        for(int i=0;i<N;i++){
+        for (int i = 0; i < N; i++) {
             String[] input = sc.nextLine().split(" ");
-            students.add(new Student(input[0],Integer.parseInt(input[1])));
+            students.add(new Student(input[0], Integer.parseInt(input[1])));
         }
         Collections.sort(students);
-        for(Student student : students){
-            System.out.print(student+" ");
+        for (Student student : students) {
+            System.out.print(student + " ");
         }
     }
 }
-class Student implements Comparable<Student>{
+
+class Student implements Comparable<Student> {
     String name;
     int age;
 
@@ -28,15 +29,17 @@ class Student implements Comparable<Student>{
         this.name = name;
         this.age = age;
     }
+
     @Override
     public int compareTo(Student o) {
-        if(this.age > o.age){
+        if (this.age > o.age) {
             return 1;
-        }else if(this.age < o.age){
+        } else if (this.age < o.age) {
             return -1;
         }
         return 0;
     }
+
     @Override
     public String toString() {
         return name;
