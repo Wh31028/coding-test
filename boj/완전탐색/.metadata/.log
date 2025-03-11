@@ -11,3 +11,29 @@ Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse
 
 !ENTRY ch.qos.logback.classic 1 0 2025-03-10 15:17:03.670
 !MESSAGE Logback config file: /Users/wh31028/repos/coding-test/boj/완전탐색/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+!SESSION 2025-03-10 15:19:04.139 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wh31028/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/wh31028/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-10 15:19:04.978
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-10 15:19:08.106
+!MESSAGE Logback config file: /Users/wh31028/repos/coding-test/boj/완전탐색/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+!SESSION 2025-03-10 15:32:02.941 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wh31028/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/wh31028/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-10 15:32:03.657
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-10 15:32:07.078
+!MESSAGE Logback config file: /Users/wh31028/repos/coding-test/boj/완전탐색/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
