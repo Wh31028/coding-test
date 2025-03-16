@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
 	
-	static class Point {
+	static class Point implements Comparable<Point>{
 		int x;
 		int y;
 		
@@ -12,12 +12,21 @@ public class Main {
 			this.y=y;
 		}
 		
+		public int compareTo(Point p1) {
+			if(this.x==p1.x) {
+				return (this.y-p1.y);
+			}else {
+				return this.x-p1.x;
+			}
+		}
+		
 		
 	}
 	
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int N = Integer.parseInt(br.readLine());
 		StringTokenizer st;
 		Point arr[] = new Point[N];
@@ -28,21 +37,11 @@ public class Main {
 			arr[i] = new Point(x,y);
 		}
 		
-		Comparator<Point> comparator = new Comparator<Point>() {
-			public int compare(Point p1,Point p2) {
-				if(p1.x==p2.x) {
-					return Integer.compare(p1.y,p2.y);
-				}else {
-					return Integer.compare(p1.x,p2.x);
-				}
-			}
-		};
-		
-		Arrays.sort(arr,comparator);
-		
-		for(int i=0;i<N;i++) {
-			System.out.println(arr[i].x+" "+arr[i].y);
-		}
+		Arrays.stream(arr)
+	      .sorted(Point::compareTo)
+	      .forEach(p -> {System.out.println(p.x+" "+p.y);
+	      });
+	    
 		
 
 	}
