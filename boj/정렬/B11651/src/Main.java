@@ -13,10 +13,10 @@ public class Main {
 		}
 		
 		public int compareTo(Point p1) {
-			if(this.x==p1.x) {
-				return (this.y-p1.y);
+			if(this.y==p1.y) {
+				return (this.x-p1.x);
 			}else {
-				return this.x-p1.x;
+				return this.y-p1.y;
 			}
 		}
 		
