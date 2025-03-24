@@ -6,7 +6,6 @@ public class Main {
 		
 		String test = String.valueOf(br.readLine());
 		
-		
 		int count = 1;
 		int ans = 0;
 		for(int i=1;i<test.length();i++) {
