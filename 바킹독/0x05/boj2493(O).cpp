@@ -13,6 +13,12 @@ int main(){
     stack<int> idx;
     vector<int> V;
 
+    //바킹독 풀이 참조
+    // stack<pair<int,int>> tower;
+
+    // tower.top().first;
+    // tower.top().second;
+
     for(int i=0;i<N;i++){
         int num;
         cin>>num;
