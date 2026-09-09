@@ -1,5 +1,44 @@
-/boj/*/B*/.settings
-/boj/*/B*/.classpath
-/boj/*/B*/.gitignore
-/boj/*/B*/.project
+# Operating system files
+.DS_Store
 
+# IDE and editor settings
+.idea/
+*.iml
+.vscode/
+.metadata/
+.settings/
+.classpath
+.project
+.factorypath
+
+# Java build output and dependency caches
+*.class
+*.jar
+*.war
+*.ear
+bin/
+out/
+build/
+target/
+.gradle/
+
+# C/C++ build output
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+*.dll
+a.out
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+
+# Editor-generated scratch files
+tempCodeRunnerFile.*
+
+# Legacy per-problem Eclipse ignore files; root rules above cover their contents.
+/boj/**/B*/.gitignore
