@@ -37,6 +37,18 @@ CMakeFiles/
 CMakeCache.txt
 compile_commands.json
 
+# Locally compiled C++ solutions (extensionless files)
+**/boj[0-9]*
+!**/boj[0-9]*.cpp
+!**/boj[0-9]*.cc
+!**/boj[0-9]*.cxx
+**/deque
+**/queue
+**/stack
+**/yamae
+**/test
+**/[0-9]
+
 # Editor-generated scratch files
 tempCodeRunnerFile.*
 
