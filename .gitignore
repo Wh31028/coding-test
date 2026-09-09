@@ -49,6 +49,13 @@ compile_commands.json
 **/test
 **/[0-9]
 
+# Keep only solution source files under Programmers; compiled executables have no extension.
+/programmers/*
+!/programmers/**/*.cpp
+!/programmers/**/*.cc
+!/programmers/**/*.cxx
+!/programmers/**/*.java
+
 # Editor-generated scratch files
 tempCodeRunnerFile.*
 
