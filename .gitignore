@@ -50,7 +50,7 @@ compile_commands.json
 **/[0-9]
 
 # Keep only solution source files under Programmers; compiled executables have no extension.
-/programmers/*
+/programmers/*/*
 !/programmers/**/*.cpp
 !/programmers/**/*.cc
 !/programmers/**/*.cxx
